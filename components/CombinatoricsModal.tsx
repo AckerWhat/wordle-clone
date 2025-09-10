@@ -8,7 +8,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 type CombinatoricsQuestion = {
   question: string;
   options: string[];
-  correctAnswer: number; // índice de la respuesta correcta (0-3)
+  correctAnswer: number; 
 };
 
 const COMBINATORICS_QUESTIONS: CombinatoricsQuestion[] = [
