@@ -1,5 +1,8 @@
 import OnScreenKeyboard, { BACKSPACE, ENTER } from '@/components/OnScreenKeyboard';
+<<<<<<< HEAD
 import RulesModal from '@/components/RulesModal';
+=======
+>>>>>>> 388641c9954ee525061999d3b1c2a69f406f489f
 import SettingsModal from '@/components/SettingsModal';
 import { Colors } from '@/constants/Colors';
 import { allWords } from '@/utils/allWords';
@@ -42,10 +45,15 @@ const Page = () => {
   const [grayLetters, setGrayLetters] = useState<string[]>([]);
 
   const settingsModalRef = useRef<BottomSheetModal>(null);
+<<<<<<< HEAD
   const rulesModalRef = useRef<BottomSheetModal>(null);
 
   const handlePresentSettingsModal = () => settingsModalRef.current?.present();
   const handlePresentRulesModal = () => rulesModalRef.current?.present();
+=======
+
+  const handlePresentSubscribeModalPress = () => settingsModalRef.current?.present();
+>>>>>>> 388641c9954ee525061999d3b1c2a69f406f489f
 
   const colStateRef = useRef(curCol);
   const setCurCol = (data: number) => {
@@ -227,10 +235,17 @@ const Page = () => {
     setTimeout(() => {
       if (currentWord === word) {
         console.log('🚀 ~ checkWord ~ WIN');
+<<<<<<< HEAD
         router.push(`/end?win=true&word=${word}&gameField=${JSON.stringify(rows)}&mode=normal`);
       } else if (curRow + 1 >= rows.length) {
         console.log('GAME OVER');
         router.push(`/end?win=false&word=${word}&gameField=${JSON.stringify(rows)}&mode=normal`);
+=======
+        router.push(`/end?win=true&word=${word}&gameField=${JSON.stringify(rows)}`);
+      } else if (curRow + 1 >= rows.length) {
+        console.log('GAME OVER');
+        router.push(`/end?win=false&word=${word}&gameField=${JSON.stringify(rows)}`);
+>>>>>>> 388641c9954ee525061999d3b1c2a69f406f489f
       }
     }, 1500);
     setCurRow(curRow + 1);
@@ -252,6 +267,10 @@ const Page = () => {
       document.addEventListener('keydown', handleKeyDown);
     }
 
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> 388641c9954ee525061999d3b1c2a69f406f489f
     return () => {
       if (Platform.OS === 'web') {
         document.removeEventListener('keydown', handleKeyDown);
@@ -339,6 +358,7 @@ const Page = () => {
   return (
     <View style={[styles.container, { backgroundColor }]}>
       <SettingsModal ref={settingsModalRef} />
+<<<<<<< HEAD
       <RulesModal ref={rulesModalRef} />
       <Stack.Screen
         options={{
@@ -356,6 +376,15 @@ const Page = () => {
               </TouchableOpacity>
               <Ionicons name="podium-outline" size={24} color={textColor} />
               <TouchableOpacity onPress={handlePresentSettingsModal}>
+=======
+      <Stack.Screen
+        options={{
+          headerRight: () => (
+            <View style={styles.headerIcons}>
+              <Ionicons name="help-circle-outline" size={28} color={textColor} />
+              <Ionicons name="podium-outline" size={24} color={textColor} />
+              <TouchableOpacity onPress={handlePresentSubscribeModalPress}>
+>>>>>>> 388641c9954ee525061999d3b1c2a69f406f489f
                 <Ionicons name="settings-sharp" size={24} color={textColor} />
               </TouchableOpacity>
             </View>

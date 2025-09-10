@@ -83,6 +83,7 @@ export default function RootLayout() {
                         fontSize: 26,
                         fontFamily: 'FrankRuhlLibre_800ExtraBold'
                       }
+<<<<<<< HEAD
                   }} />
                   <Stack.Screen name='hard-game' options={{ 
                       headerTitle: 'Wordle Difícil',
@@ -101,6 +102,8 @@ export default function RootLayout() {
                         fontSize: 22,
                         fontFamily: 'FrankRuhlLibre_800ExtraBold'
                       }
+=======
+>>>>>>> 388641c9954ee525061999d3b1c2a69f406f489f
                   }} />     
                   <Stack.Screen name='end' options={{ 
                       presentation: 'fullScreenModal',

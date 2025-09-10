@@ -42,6 +42,7 @@ export default function Index() {
       <View style={styles.menu}>
         <Link href={"/game"} style={[styles.btn,{backgroundColor: colorScheme === 'light' ? '#000' : '#4a4a4a' }]} asChild>
           <AnimatedTouchableOpacity entering={FadeInLeft}>
+<<<<<<< HEAD
             <Text style={[styles.btnText, styles.primaryText]}>Jugar Clásico</Text>
           </AnimatedTouchableOpacity>
         </Link>
@@ -55,12 +56,19 @@ export default function Index() {
         <Link href={"/combinatorics-game"} style={[styles.btn, {backgroundColor: Colors.light.green }]} asChild>
           <AnimatedTouchableOpacity entering={FadeInLeft.delay(100)}>
             <Text style={[styles.btnText, styles.primaryText]}>Modo Combinatoria</Text>
+=======
+            <Text style={[styles.btnText, styles.primaryText]}>Jugar</Text>
+>>>>>>> 388641c9954ee525061999d3b1c2a69f406f489f
           </AnimatedTouchableOpacity>
         </Link>       
 
         <SignedOut>
           <Link href={'/login'} style={[styles.btn, {borderColor:textColor}]} asChild>
+<<<<<<< HEAD
             <AnimatedTouchableOpacity entering={FadeInLeft.delay(150)}>
+=======
+            <AnimatedTouchableOpacity entering={FadeInLeft.delay(100)}>
+>>>>>>> 388641c9954ee525061999d3b1c2a69f406f489f
               <ThemedText style={styles.btnText}>Iniciar Sesión</ThemedText>
             </AnimatedTouchableOpacity>  
           </Link> 
@@ -75,7 +83,11 @@ export default function Index() {
           </AnimatedTouchableOpacity>
         </SignedIn>
 
+<<<<<<< HEAD
         <AnimatedTouchableOpacity entering={FadeInLeft.delay(250)}
+=======
+        <AnimatedTouchableOpacity entering={FadeInLeft.delay(300)}
+>>>>>>> 388641c9954ee525061999d3b1c2a69f406f489f
             onPress={handlePresentSubscribeModal}
             style={[styles.btn, {borderColor:textColor}]}
           >
@@ -85,7 +97,11 @@ export default function Index() {
 
       <Animated.View style={styles.footer} entering={FadeIn.delay(300)}>
         <ThemedText style={styles.footerDate}>{format(new Date(), 'MMMM d, yyyy')}</ThemedText>
+<<<<<<< HEAD
         <ThemedText style={styles.footerText}>Creador por Nicola y Jonathan</ThemedText>
+=======
+        <ThemedText style={styles.footerText}>Creador por Nick</ThemedText>
+>>>>>>> 388641c9954ee525061999d3b1c2a69f406f489f
       </Animated.View>
     </View>
   );
@@ -122,8 +138,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderColor: '#000',
     borderWidth: 1,
+<<<<<<< HEAD
     width: '70%',
     maxWidth: 250,
+=======
+    width: '60%',
+    maxWidth: 200,
+>>>>>>> 388641c9954ee525061999d3b1c2a69f406f489f
   },
   btnText:{
     padding: 14,
@@ -148,4 +169,8 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: 'bold',
   }
+<<<<<<< HEAD
 });
+=======
+})
+>>>>>>> 388641c9954ee525061999d3b1c2a69f406f489f

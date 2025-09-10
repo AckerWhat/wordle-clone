@@ -48,6 +48,21 @@ const SettingsModal = forwardRef<Ref>((props, ref) => {
         <View>
           <View style={styles.row}>
             <View style={styles.rowText}>
+<<<<<<< HEAD
+=======
+              <Text style={styles.rowTextBig}>Modo difícil</Text>
+              <Text style={styles.rowTextSmall}>Las palabras son más largas y más difíciles.</Text>
+            </View>
+            <Switch
+              onValueChange={toggleHard}
+              value={hard}
+              trackColor={{ true: '#000' }}
+              ios_backgroundColor="#9a9a9a"
+            />
+          </View>
+          <View style={styles.row}>
+            <View style={styles.rowText}>
+>>>>>>> 388641c9954ee525061999d3b1c2a69f406f489f
               <Text style={styles.rowTextBig}>Modo oscuro</Text>
               <Text style={styles.rowTextSmall}>Cambia la aplicación al modo oscuro.</Text>
             </View>

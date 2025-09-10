@@ -126,9 +126,13 @@ const Page = () => {
         onCorrectAnswer={handleCorrectAnswer}
         onWrongAnswer={handleWrongAnswer}
         isUserLoggedIn={!!user}
+<<<<<<< HEAD
       >
         <></>
       </CombinatoricsModal>
+=======
+      />
+>>>>>>> 388641c9954ee525061999d3b1c2a69f406f489f
 
       <TouchableOpacity onPress={navigateRoot} style={{
         alignSelf: 'flex-end',
